@@ -1,6 +1,0 @@
-mkdir prat-los && cd prat-los
-repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
-repo sync
-git clone https://github.com/PratyakshM/device_xiaomi_rosy --branch testing-los device/xiaomi/rosy
-git clone https://github.com/PratyakshM/kernel_xiaomi_rosy kernel/xiaomi/rosy
-. build/envsetup.sh && lunch lineage_rosy-userdebug && brunch rosy
