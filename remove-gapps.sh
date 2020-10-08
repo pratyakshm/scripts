@@ -36,10 +36,8 @@ echo "Removing Google Podcasts"
 adb shell pm uninstall -k --user 0 com.google.android.apps.podcasts
 echo "Removing Google Services Framework"
 adb shell pm uninstall -k --user 0 com.google.android.gsf
-echo "Removing Google Wallpaper Images"
 echo "Removing GMS Setup"
 adb shell pm uninstall -k --user 0 com.google.android.gms.setup
-adb shell pm uninstall -k --user 0 com.google.android.apps.wallpaper.nexus
 echo "Removing Pixel Setup"
 adb shell pm uninstall -k --user 0 com.google.android.pixel.setupwizard
 
