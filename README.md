@@ -1,8 +1,29 @@
-# scripts
-Description:
-**PE-Debloat**: used to debloat a fresh copy of PixelExperience ROM for Android devices    
-**RevengeOS**: used to be used by me to build RevengeOS for Xiaomi rosy, no longer used    
-**remove-gapps**: used to remove most core GApps packages from Android devices    
-**samsung-debloat**: used to debloat Samsung devices     
-&nbsp;
-**Note**: Usage of the Samsung debloat script might result in a lot of errors. While some of these might be permission restrictions, others might be that the packages don't exist. These are safe to ignore.
+# Scripts
+
+This repostiory contains scripts that I, or other people, have written in order to do either one or multiple of the following:
+
+1. Automate tasks
+
+2. Make life easier
+
+
+## Run these scripts:
+
+### 1. Debloat-Samsung-OneUI-Core-3.1
+
+```
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cutt.ly/MO2ZW72'))
+```
+
+
+### 2. Disable-VirtualizationBasedSecurity
+
+```
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cutt.ly/PO2XiBb'))
+```
+
+### 3. Scheduled-Automatic-Theme-Switcher
+
+```
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cutt.ly/dO2XcEg'))
+```
