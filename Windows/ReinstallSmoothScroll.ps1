@@ -29,10 +29,12 @@ if (Test-Path $sourcePath) {
 # Uninstall SmoothScroll
 Write-Host "Uninstalling SmoothScroll..."
 $uninstallerPath = "C:\Users\$env:username\AppData\Local\SmoothScroll\app-1.2.4.0\unins000.exe"
+$registryPath = "HKCU:\Software\SmoothScroll"
 
 # Check if the uninstaller file exists before attempting to uninstall
 if (Test-Path $uninstallerPath) {
     Start-Process -FilePath $uninstallerPath -ArgumentList "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART" -Wait
+    Remove-Item -Path $registryPath -ErrorAction SilentlyContinue
     Write-Host "SmoothScroll uninstalled successfully."
 } else {
     Write-Host "Error: Uninstaller not found. SmoothScroll may not be installed."
